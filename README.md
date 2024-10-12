@@ -1,6 +1,6 @@
 # HostelConnect
-Asteroid Destroyers
-Author - Dhanashri Garande
-         Prachi Gengje
-         Aditya Nagargoje
-         Amey Kadu
+Asteroid Destroyers <br>
+Author - Dhanashri Garande <br>
+         Prachi Gengje <br>
+         Aditya Nagargoje <br>
+         Amey Kadu 
