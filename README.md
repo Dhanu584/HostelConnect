@@ -1,16 +1,42 @@
-# React + Vite
+# 🏠 HostelConnect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**HostelConnect** is a web platform designed to make hostel life easier and more connected for college students. It provides tools for admissions, book exchange, club collaborations, parcel help, food borrowing, and a safe help section for girls.  
 
-Currently, two official plugins are available:
+This project is built with **React.js** for the frontend and **Node.js** for the backend (if applicable), and includes user authentication and a wishlist system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **User Authentication:** Sign up, login, and secure session management.
+- **Homepage:** Ad-style image grids showcasing various services.
+- **Book Exchange:** Buy and sell books among students.
+- **Club Collaboration:** Connect with college clubs for events and activities.
+- **Parcel Help:** Request assistance with receiving parcels when in class.
+- **Food Borrowing:** Borrow and lend food among hostelites.
+- **Help Section for Girls:** A safe space for reporting and requesting help.
+- **Wishlist:** Save favorite items or requests for quick access.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, HTML5, CSS3, JavaScript
+- **Backend (if used):** Node.js, Express.js
+- **Database (if used):** MongoDB / Firebase
+- **Authentication:** JWT / Firebase Auth
+- **Version Control:** Git & GitHub
+
+---
+
+## 📁 Project Structure (Frontend)
+
+frontend/
+├── public/
+├── src/
+│ ├── components/ # Reusable UI components (Navbar, Cards, Sidebar, etc.)
+│ ├── pages/ # Route-level components (Home, Login, Wishlist, etc.)
+│ ├── App.jsx
+│ └── index.js
+├── package.json
+└── README.md
