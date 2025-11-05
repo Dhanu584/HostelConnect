@@ -1,0 +1,103 @@
+/* Reset body spacing so no white gap appears under navbar */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #184b6b, #235b7b);
+  padding: 15px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: fixed; /* keeps navbar stuck to top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* keeps it above other content */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand name */
+.nav-left h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0; /* removes unwanted bottom space */
+  cursor: pointer;
+}
+
+/* Center navigation buttons */
+.nav-center {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-center button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  padding: 5px 0;
+}
+
+.nav-center button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.nav-center button:hover {
+  opacity: 0.85;
+}
+
+/* Right side: Signin / Signup / Hamburger */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.signin-btn,
+.signup-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #dce3eb;
+  color: #12344a;
+  transition: 0.3s;
+}
+
+.signup-btn {
+  background-color: #ffffff;
+  font-weight: 600;
+}
+
+.signin-btn:hover,
+.signup-btn:hover {
+  background-color: #b8c6d8;
+}
+
+.hamburger-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Add margin to main page content to avoid being hidden under navbar */
+main,
+div.app-content,
+.page-content {
+  margin-top: 80px; /* adjust if navbar height changes */
+}

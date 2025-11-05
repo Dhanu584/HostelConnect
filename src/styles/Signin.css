@@ -1,0 +1,110 @@
+/* Full page background */
+.signin-container {
+  height: 100vh;
+  background: #316b91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Centered box */
+.signin-box {
+  width: 380px;
+  text-align: center;
+  color: white;
+}
+
+/* Small top link */
+.signup-link {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.signup-link a {
+  color: #d3e8ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Login heading */
+.signin-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input field */
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #c2d7ea;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #d6e5f3;
+}
+
+/* Sign in button */
+.signin-btn {
+  margin-top: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #18425d;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Remember me + forgot password */
+.signin-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.forgot-link {
+  color: #e3f2ff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}

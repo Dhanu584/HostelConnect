@@ -1,0 +1,155 @@
+/* ========== TODAY PAGE STYLING ========== */
+.today-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left: Mess Menu Section */
+.menu-section {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.menu-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #d91c03; /* your Flyzy red accent */
+  font-weight: 600;
+}
+
+.menu-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.menu-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.menu-scroll::-webkit-scrollbar-thumb {
+  background: #d91c03;
+  border-radius: 10px;
+}
+
+/* Individual menu card */
+.menu-card {
+  flex: 0 0 180px;
+  background: #fff7f6;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Right: Events Section */
+.events-section {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.events-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #d91c03;
+  font-weight: 600;
+}
+
+/* Scroll container for events */
+.events-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding-right: 10px;
+}
+
+.events-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.events-scroll::-webkit-scrollbar-thumb {
+  background: #d91c03;
+  border-radius: 10px;
+}
+
+/* Individual event card */
+.event-card {
+  background: #fff7f6;
+  border-radius: 14px;
+  padding: 15px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.event-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 900px) {
+  .today-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .menu-section,
+  .events-section {
+    width: 100%;
+  }
+
+  .menu-scroll {
+    gap: 15px;
+  }
+}
