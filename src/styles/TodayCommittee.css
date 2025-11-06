@@ -1,0 +1,56 @@
+.committee-container {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.committee-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.committee-controls input,
+.committee-controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.committee-controls button {
+  background: #184b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.committee-controls button:hover {
+  background: #235b7b;
+}
+
+.week-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.day-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-item {
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.empty-text {
+  color: #777;
+  text-align: center;
+}

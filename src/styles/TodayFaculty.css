@@ -1,0 +1,57 @@
+.faculty-container {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.faculty-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.faculty-controls input,
+.faculty-controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.faculty-controls button {
+  background: #184b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.faculty-controls button:hover {
+  background: #235b7b;
+}
+
+.week-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.day-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.menu-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
